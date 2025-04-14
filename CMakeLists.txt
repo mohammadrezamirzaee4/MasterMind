@@ -13,9 +13,8 @@ FetchContent_Declare(SFML
 FetchContent_MakeAvailable(SFML)
 
 add_executable(mastermind src/main.cpp)
-target_include_directories(mastermind lib)
+target_include_directories(mastermind PUBLIC "lib")
 add_library(lib lib/mastermind.cpp)
 target_link_libraries(mastermind PUBLIC lib)
-target_include_directories(mastermind lib)
 target_compile_features(mastermind PRIVATE cxx_std_17)
 target_link_libraries(mastermind PRIVATE SFML::Graphics)
