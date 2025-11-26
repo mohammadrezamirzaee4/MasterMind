@@ -79,7 +79,7 @@
          scorePoints = {{319.0,578.0},{349.0,578},{319.0,555.0},{349.0,555.0}};//66 up
 
          // fps measuring
-         clock = sf::Clock::Clock();
+         clock = sf::Clock();
          text.setPosition(10.0f,10.0f);
          font.loadFromFile("assets/font.otf");
          text.setFont(font);
@@ -88,7 +88,7 @@
          // Board grapics initiazied
 
          
-         boardtexture.loadFromFile("assets/board.jpeg");
+         boardtexture.loadFromFile("../../assets/board.jpeg");
          
          
          m_board.setSize(sf::Vector2f(422.0f, 750.0f));
